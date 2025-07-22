@@ -1,4 +1,28 @@
-button{
-    margin-bottom: 30px;
-    margin-top: 65px;
+button {
+  margin-top: 65px;
+  margin-bottom: 30px;
+  padding: 12px 32px;
+  background-color: #3f51b5; /* Azul gamer sólido */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e3da8; /* Tom mais escuro no hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
