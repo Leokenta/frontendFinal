@@ -1,16 +1,94 @@
-table{
-    width: 100%;
-    box-shadow: 
-        inset -2px -2px 5px rgba(255, 255, 255, 0.1),  
-        inset 2px 2px 5px rgba(0, 0, 0, 0.4),
-        4px 0 10px rgba(0, 0, 0, 0.6);             
-    border-right: 1px solid rgba(255, 255, 255, 0.05);
+/* Fundo da página */
+body {
+  background-color: #383838;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.edit > i{
-    color: #d9cd26;
+/* Estilo da tabela */
+table {
+  width: 100%;
+  background-color: #424242;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow:
+    inset -2px -2px 5px rgba(255, 255, 255, 0.05),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.3),
+    4px 0 10px rgba(0, 0, 0, 0.6);
 }
 
-.delete > i{
-    color: #e35e6b;
+/* Células */
+th, td {
+  padding: 12px;
+  text-align: left;
+  color: #f1f1f1;
+}
+
+th {
+  background-color: #2c2c2c;
+  font-weight: 600;
+}
+
+td {
+  background-color: #3e3e3e;
+}
+
+/* Ícones de ação */
+.edit > i {
+  color: #fdd835;
+  cursor: pointer;
+}
+
+.delete > i {
+  color: #ef5350;
+  cursor: pointer;
+}
+
+/* Barra de pesquisa centralizada */
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+/* Barra de pesquisa minimalista */
+.custom-search {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 0 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+}
+
+.custom-search .mat-input-element {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.custom-search .mat-form-field-label {
+  color: #888 !important;
+  font-weight: 400;
+}
+
+.custom-search .mat-icon {
+  color: #555;
+}
+
+.custom-search.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: transparent;
+}
+
+.custom-search .mat-form-field-outline-thick {
+  color: #aaa;
+}
+
+/* Mensagem de vazio */
+.no-results {
+  margin-top: 20px;
+  text-align: center;
+  color: #ccc;
+  font-style: italic;
 }
