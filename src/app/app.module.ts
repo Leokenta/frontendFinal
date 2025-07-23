@@ -53,6 +53,7 @@ import { FuncionariosCreateComponent } from './components/funcionarios/funcionar
 import { FuncionariosUpdateComponent } from './components/funcionarios/funcionarios-update/funcionarios-update.component';
 import { FuncionariosDeleteComponent } from './components/funcionarios/funcionarios-delete/funcionarios-delete.component';
 import { FuncionariosCrudComponent } from './views/funcionarios-crud/funcionarios-crud/funcionarios-crud.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 registerLocaleData(localePt)
 
@@ -104,7 +105,8 @@ registerLocaleData(localePt)
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [{
     provide: LOCALE_ID,

@@ -17,21 +17,22 @@ export class FuncionariosCreateComponent implements OnInit {
     email_func: ''
   }
 
-  constructor(private funcionariosService: FuncionarioService,
-    private router: Router) { }
+  constructor(
+    private funcionariosService: FuncionarioService,
+    private router: Router
+  ) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   createFuncionario(): void {
     this.funcionariosService.create(this.funcionario).subscribe(() => {
-      this.funcionariosService.showMessage('Funcionário criado!')
-      this.router.navigate(['/funcionarios'])
-    })
+      this.funcionariosService.showMessage('Funcionário criado!');
+      this.router.navigate(['/funcionarios']);
+    });
   }
 
   cancel(): void {
-    this.router.navigate(['/funcionarios'])
+    this.router.navigate(['/funcionarios']);
   }
 
 }
